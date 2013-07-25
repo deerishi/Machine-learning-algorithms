@@ -12,7 +12,7 @@ function [model] = svmTrain(X, Y, C, kernelFunction, ...
 %   over the dataset (without changes to alpha) before the algorithm quits.
 %tol = 1e-3;
 eps=1e-5;
-%max_passes = 10;
+max_passes = 10; %the number of max passes are done as we want that a minimum of that many number  of passes  in which no alpha has changed
 m=size(X,1);
 n=size(X,2);
 alpha=zeros(m,1);
