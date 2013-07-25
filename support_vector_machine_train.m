@@ -29,7 +29,7 @@ for i=1:m
     wx=0;
     for h=1:m
         k=kernal(X(i),X(h),kernelFunction);%kernal function is defined below
-        wx=wx+ alpha(h)*Y(h)*k;
+        wx=wx+ alpha(h)*Y(h)*k; % this is w'x term
     end
    
     E(i)=b+wx-Y(i);
